@@ -8,7 +8,7 @@ shift
 
 mkdir -p $destination
 
-for file in $@
+for file in "$@"
 do
-    cp $file $destination/
+    cp "$file" $destination/
 done
